@@ -461,8 +461,8 @@ where
 	BE: Backend<B> + 'static,
 	BE::State: StateBackend<BlakeTwo256>,
 {
-	// Max request duration of 10 seconds.
-	let max_duration = time::Duration::from_secs(10);
+	// Max request duration of 58 seconds.
+	let max_duration = time::Duration::from_secs(58);
 	let begin_request = time::Instant::now();
 
 	let mut current_number = from;
